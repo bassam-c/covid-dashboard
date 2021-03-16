@@ -1,0 +1,540 @@
+total,2020-09-23,24570
+amazonas,2020-09-23,116
+antioquia,2020-09-23,2241
+arauca,2020-09-23,38
+atlantico,2020-09-23,1370
+barranquilla,2020-09-23,1662
+bolivar,2020-09-23,219
+boyaca,2020-09-23,125
+caldas,2020-09-23,111
+caqueta,2020-09-23,278
+casanare,2020-09-23,42
+cauca,2020-09-23,231
+cesar,2020-09-23,523
+choco,2020-09-23,155
+cordoba,2020-09-23,1502
+cundinamarca,2020-09-23,924
+guainía,2020-09-23,10
+guaviare,2020-09-23,11
+huila,2020-09-23,305
+la guajira,2020-09-23,285
+magdalena,2020-09-23,380
+meta,2020-09-23,378
+nariño,2020-09-23,661
+norte de santannder,2020-09-23,847
+putumayo,2020-09-23,164
+quindío,2020-09-23,86
+risaralda,2020-09-23,210
+san andrés y providencia,2020-09-23,10
+santander,2020-09-23,1200
+sucre,2020-09-23,565
+tolima,2020-09-23,288
+valle del cauca,2020-09-23,400
+vaupés,2020-09-23,6
+vichada,2020-09-23,4 
+
+
+total,2020-09-24,24746
+amazonas,2020-09-24,116
+antioquia,2020-09-24,2266
+arauca,2020-09-24,39
+atlantico,2020-09-24,1373
+barranquilla,2020-09-24,1664
+bolivar,2020-09-24,219
+boyaca,2020-09-24,129
+caldas,2020-09-24,114
+caqueta,2020-09-24,282
+casanare,2020-09-24,41
+cauca,2020-09-24,238
+cesar,2020-09-24,526
+choco,2020-09-24,155
+cordoba,2020-09-24,1505
+cundinamarca,2020-09-24,929
+guainía,2020-09-24,10
+guaviare,2020-09-24,11
+huila,2020-09-24,310
+la guajira,2020-09-24,286
+magdalena,2020-09-24,381
+meta,2020-09-24,381
+nariño,2020-09-24,663
+norte de santannder,2020-09-24,856
+putumayo,2020-09-24,164
+quindío,2020-09-24,87
+risaralda,2020-09-24,220
+san andrés y providencia,2020-09-24,10
+santander,2020-09-24,1209
+sucre,2020-09-24,570
+tolima,2020-09-24,293
+valle del cauca,2020-09-24,1989
+vaupés,2020-09-24,6
+vichada,2020-09-24,4
+
+
+total,2020-09-25,24924
+amazonas,2020-09-25,117
+antioquia,2020-09-25,2285
+arauca,2020-09-25,40
+atlantico,2020-09-25,1376
+barranquilla,2020-09-25,1666
+bolivar,2020-09-25,219
+boyaca,2020-09-25,131
+caldas,2020-09-25,116
+caqueta,2020-09-25,282
+casanare,2020-09-25,41
+cauca,2020-09-25,241
+cesar,2020-09-25,536
+choco,2020-09-25,155
+cordoba,2020-09-25,1510
+cundinamarca,2020-09-25,942
+guainía,2020-09-25,11
+guaviare,2020-09-25,11
+huila,2020-09-25,315
+la guajira,2020-09-25,289
+magdalena,2020-09-25,382
+meta,2020-09-25,386
+nariño,2020-09-25,665
+norte de santannder,2020-09-25,861
+putumayo,2020-09-25,165
+quindío,2020-09-25,90
+risaralda,2020-09-25,225
+san andrés y providencia,2020-09-25,11
+santander,2020-09-25,1223
+sucre,2020-09-25,570
+tolima,2020-09-25,300
+valle del cauca,2020-09-25,2004
+vaupés,2020-09-25,7
+vichada,2020-09-25,4
+
+
+total,2020-09-26,25103
+amazonas,2020-09-26,117
+antioquia,2020-09-26,2296
+arauca,2020-09-26,41
+atlantico,2020-09-26,1383
+barranquilla,2020-09-26,1670
+bolivar,2020-09-26,220
+boyaca,2020-09-26,133
+caldas,2020-09-26,120
+caqueta,2020-09-26,284
+casanare,2020-09-26,43
+cauca,2020-09-26,246
+cesar,2020-09-26,546
+choco,2020-09-26,155
+cordoba,2020-09-26,1511
+cundinamarca,2020-09-26,952
+guainía,2020-09-26,11
+guaviare,2020-09-26,12
+huila,2020-09-26,324
+la guajira,2020-09-26,291
+magdalena,2020-09-26,383
+meta,2020-09-26,392
+nariño,2020-09-26,668
+norte de santannder,2020-09-26,868
+putumayo,2020-09-26,167
+quindío,2020-09-26,90
+risaralda,2020-09-26,231
+san andrés y providencia,2020-09-26,11
+santander,2020-09-26,1236
+sucre,2020-09-26,570
+tolima,2020-09-26,308
+valle del cauca,2020-09-26,2023
+vaupés,2020-09-26,8
+vichada,2020-09-26,4
+
+
+total,2020-09-27,25296
+amazonas,2020-09-27,117
+antioquia,2020-09-27,2314
+arauca,2020-09-27,42
+atlantico,2020-09-27,1385
+barranquilla,2020-09-27,1672
+bolivar,2020-09-27,221
+boyaca,2020-09-27,137
+caldas,2020-09-27,123
+caqueta,2020-09-27,289
+casanare,2020-09-27,44
+cauca,2020-09-27,252
+cesar,2020-09-27,555
+choco,2020-09-27,155
+cordoba,2020-09-27,1520
+cundinamarca,2020-09-27,963
+guainía,2020-09-27,12
+guaviare,2020-09-27,12
+huila,2020-09-27,332
+la guajira,2020-09-27,292
+magdalena,2020-09-27,386
+meta,2020-09-27,400
+nariño,2020-09-27,674
+norte de santannder,2020-09-27,874
+putumayo,2020-09-27,169
+quindío,2020-09-27,96
+risaralda,2020-09-27,234
+san andrés y providencia,2020-09-27,14
+santander,2020-09-27,1249
+sucre,2020-09-27,572
+tolima,2020-09-27,314
+valle del cauca,2020-09-27,2041
+vaupés,2020-09-27,9
+vichada,2020-09-27,4
+
+
+total,2020-09-28,25488
+amazonas,2020-09-28,117
+antioquia,2020-09-28,2337
+arauca,2020-09-28,44
+atlantico,2020-09-28,1388
+barranquilla,2020-09-28,1674
+bolivar,2020-09-28,222
+boyaca,2020-09-28,144
+caldas,2020-09-28,125
+caqueta,2020-09-28,296
+casanare,2020-09-28,46
+cauca,2020-09-28,257
+cesar,2020-09-28,565
+choco,2020-09-28,155
+cordoba,2020-09-28,1526
+cundinamarca,2020-09-28,973
+guainía,2020-09-28,12
+guaviare,2020-09-28,13
+huila,2020-09-28,344
+la guajira,2020-09-28,297
+magdalena,2020-09-28,388
+meta,2020-09-28,404
+nariño,2020-09-28,675
+norte de santannder,2020-09-28,880
+putumayo,2020-09-28,169
+quindío,2020-09-28,96
+risaralda,2020-09-28,237
+san andrés y providencia,2020-09-28,14
+santander,2020-09-28,1271
+sucre,2020-09-28,575
+tolima,2020-09-28,319
+valle del cauca,2020-09-28,2052
+vaupés,2020-09-28,9
+vichada,2020-09-28,4
+
+
+total,2021-03-05,52180
+amazonas,2021-03-05,134
+antioquia,2021-03-05,5748
+arauca,2021-03-05,153
+atlantico,2021-03-05,1682
+barranquilla,2021-03-05,2081
+bolivar,2021-03-05,330
+boyaca,2021-03-05,834
+caldas,2021-03-05,826
+caqueta,2021-03-05,581
+casanare,2021-03-05,232
+cauca,2021-03-05,606
+cesar,2021-03-05,1089
+choco,2021-03-05,176
+cordoba,2021-03-05,1680
+cundinamarca,2021-03-05,2307
+guainía,2021-03-05,22
+guaviare,2021-03-05,38
+huila,2021-03-05,1378
+la guajira,2021-03-05,591
+magdalena,2021-03-05,561
+meta,2021-03-05,862
+nariño,2021-03-05,1314
+norte de santannder,2021-03-05,2516
+putumayo,2021-03-05,286
+quindío,2021-03-05,822
+risaralda,2021-03-05,1008
+san andrés y providencia,2021-03-05,43
+santander,2021-03-05,2907
+sucre,2021-03-05,713
+tolima,2021-03-05,1762
+valle del cauca,2021-03-05,5187
+vaupés,2021-03-05,13
+vichada,2021-03-05,20
+
+
+total,2021-03-06,60005
+amazonas,2021-03-06,184
+antioquia,2021-03-06,6569
+arauca,2021-03-06,169
+atlantico,2021-03-06,1814
+barranquilla,2021-03-06,2230
+bolivar,2021-03-06,352
+boyaca,2021-03-06,1101
+caldas,2021-03-06,981
+caqueta,2021-03-06,628
+casanare,2021-03-06,273
+cauca,2021-03-06,749
+cesar,2021-03-06,1187
+choco,2021-03-06,200
+cordoba,2021-03-06,1822
+cundinamarca,2021-03-06,2901
+guainía,2021-03-06,22
+guaviare,2021-03-06,40
+huila,2021-03-06,1739
+la guajira,2021-03-06,634
+magdalena,2021-03-06,641
+meta,2021-03-06,972
+nariño,2021-03-06,1618
+norte de santannder,2021-03-06,2719
+putumayo,2021-03-06,315
+quindío,2021-03-06,962
+risaralda,2021-03-06,1141
+san andrés y providencia,2021-03-06,45
+santander,2021-03-06,3351
+sucre,2021-03-06,781
+tolima,2021-03-06,2107
+valle del cauca,2021-03-06,6223
+vaupés,2021-03-06,13
+vichada,2021-03-06,22
+
+
+total,2021-03-08,60208
+amazonas,2021-03-08,189
+antioquia,2021-03-08,6595
+arauca,2021-03-08,169
+atlantico,2021-03-08,1818
+barranquilla,2021-03-08,2236
+bolivar,2021-03-08,353
+boyaca,2021-03-08,1106
+caldas,2021-03-08,982
+caqueta,2021-03-08,628
+casanare,2021-03-08,273
+cauca,2021-03-08,749
+cesar,2021-03-08,1189
+choco,2021-03-08,201
+cordoba,2021-03-08,1831
+cundinamarca,2021-03-08,2914
+guainía,2021-03-08,22
+guaviare,2021-03-08,40
+huila,2021-03-08,1741
+la guajira,2021-03-08,636
+magdalena,2021-03-08,649
+meta,2021-03-08,973
+nariño,2021-03-08,1618
+norte de santannder,2021-03-08,2723
+putumayo,2021-03-08,316
+quindío,2021-03-08,970
+risaralda,2021-03-08,1145
+san andrés y providencia,2021-03-08,45
+santander,2021-03-08,3367
+sucre,2021-03-08,781
+tolima,2021-03-08,2107
+valle del cauca,2021-03-08,6250
+vaupés,2021-03-08,13
+vichada,2021-03-08,22
+
+
+total,2021-03-11,60478
+amazonas,2021-03-11,197
+antioquia,2021-03-11,6629
+arauca,2021-03-11,171
+atlantico,2021-03-11,1822
+barranquilla,2021-03-11,2242
+bolivar,2021-03-11,353
+boyaca,2021-03-11,1114
+caldas,2021-03-11,986
+caqueta,2021-03-11,628
+casanare,2021-03-11,281
+cauca,2021-03-11,749
+cesar,2021-03-11,1197
+choco,2021-03-11,201
+cordoba,2021-03-11,1843
+cundinamarca,2021-03-11,2930
+guainía,2021-03-11,22
+guaviare,2021-03-11,40
+huila,2021-03-11,1751
+la guajira,2021-03-11,636
+magdalena,2021-03-11,659
+meta,2021-03-11,978
+nariño,2021-03-11,1622
+norte de santannder,2021-03-11,2730
+putumayo,2021-03-11,316
+quindío,2021-03-11,977
+risaralda,2021-03-11,1152
+san andrés y providencia,2021-03-11,45
+santander,2021-03-11,3387
+sucre,2021-03-11,786
+tolima,2021-03-11,2113
+valle del cauca,2021-03-11,6282
+vaupés,2021-03-11,13
+vichada,2021-03-11,22
+
+
+total,2021-03-11,60563
+amazonas,2021-03-11,198
+antioquia,2021-03-11,6638
+arauca,2021-03-11,171
+atlantico,2021-03-11,1824
+barranquilla,2021-03-11,2247
+bolivar,2021-03-11,353
+boyaca,2021-03-11,1115
+caldas,2021-03-11,988
+caqueta,2021-03-11,629
+casanare,2021-03-11,282
+cauca,2021-03-11,750
+cesar,2021-03-11,1198
+choco,2021-03-11,201
+cordoba,2021-03-11,1846
+cundinamarca,2021-03-11,2933
+guainía,2021-03-11,22
+guaviare,2021-03-11,40
+huila,2021-03-11,1751
+la guajira,2021-03-11,636
+magdalena,2021-03-11,665
+meta,2021-03-11,980
+nariño,2021-03-11,1624
+norte de santannder,2021-03-11,2730
+putumayo,2021-03-11,316
+quindío,2021-03-11,979
+risaralda,2021-03-11,1156
+san andrés y providencia,2021-03-11,45
+santander,2021-03-11,3395
+sucre,2021-03-11,790
+tolima,2021-03-11,2115
+valle del cauca,2021-03-11,6294
+vaupés,2021-03-11,13
+vichada,2021-03-11,22
+
+
+total,2021-03-13,60655
+amazonas,2021-03-13,200
+antioquia,2021-03-13,6644
+arauca,2021-03-13,171
+atlantico,2021-03-13,1826
+barranquilla,2021-03-13,2248
+bolivar,2021-03-13,353
+boyaca,2021-03-13,1116
+caldas,2021-03-13,989
+caqueta,2021-03-13,630
+casanare,2021-03-13,282
+cauca,2021-03-13,751
+cesar,2021-03-13,1199
+choco,2021-03-13,201
+cordoba,2021-03-13,1850
+cundinamarca,2021-03-13,2936
+guainía,2021-03-13,22
+guaviare,2021-03-13,40
+huila,2021-03-13,1754
+la guajira,2021-03-13,637
+magdalena,2021-03-13,673
+meta,2021-03-13,981
+nariño,2021-03-13,1624
+norte de santannder,2021-03-13,2731
+putumayo,2021-03-13,316
+quindío,2021-03-13,982
+risaralda,2021-03-13,1158
+san andrés y providencia,2021-03-13,45
+santander,2021-03-13,3402
+sucre,2021-03-13,795
+tolima,2021-03-13,2119
+valle del cauca,2021-03-13,6304
+vaupés,2021-03-13,13
+vichada,2021-03-13,22
+
+
+total,2021-03-14,60751
+amazonas,2021-03-14,200
+antioquia,2021-03-14,6649
+arauca,2021-03-14,171
+atlantico,2021-03-14,1831
+barranquilla,2021-03-14,2254
+bolivar,2021-03-14,355
+boyaca,2021-03-14,1122
+caldas,2021-03-14,989
+caqueta,2021-03-14,630
+casanare,2021-03-14,283
+cauca,2021-03-14,752
+cesar,2021-03-14,1201
+choco,2021-03-14,201
+cordoba,2021-03-14,1854
+cundinamarca,2021-03-14,2941
+guainía,2021-03-14,22
+guaviare,2021-03-14,40
+huila,2021-03-14,1756
+la guajira,2021-03-14,639
+magdalena,2021-03-14,683
+meta,2021-03-14,982
+nariño,2021-03-14,1625
+norte de santannder,2021-03-14,2732
+putumayo,2021-03-14,316
+quindío,2021-03-14,984
+risaralda,2021-03-14,1159
+san andrés y providencia,2021-03-14,45
+santander,2021-03-14,3407
+sucre,2021-03-14,795
+tolima,2021-03-14,2120
+valle del cauca,2021-03-14,6315
+vaupés,2021-03-14,13
+vichada,2021-03-14,22
+
+
+total,2021-03-14,60751
+amazonas,2021-03-14,200
+antioquia,2021-03-14,6649
+arauca,2021-03-14,171
+atlantico,2021-03-14,1831
+barranquilla,2021-03-14,2254
+bolivar,2021-03-14,355
+boyaca,2021-03-14,1122
+caldas,2021-03-14,989
+caqueta,2021-03-14,630
+casanare,2021-03-14,283
+cauca,2021-03-14,752
+cesar,2021-03-14,1201
+choco,2021-03-14,201
+cordoba,2021-03-14,1854
+cundinamarca,2021-03-14,2941
+guainía,2021-03-14,22
+guaviare,2021-03-14,40
+huila,2021-03-14,1756
+la guajira,2021-03-14,639
+magdalena,2021-03-14,683
+meta,2021-03-14,982
+nariño,2021-03-14,1625
+norte de santannder,2021-03-14,2732
+putumayo,2021-03-14,316
+quindío,2021-03-14,984
+risaralda,2021-03-14,1159
+san andrés y providencia,2021-03-14,45
+santander,2021-03-14,3407
+sucre,2021-03-14,795
+tolima,2021-03-14,2120
+valle del cauca,2021-03-14,6315
+vaupés,2021-03-14,13
+vichada,2021-03-14,22
+
+
+total,2021-03-15,60848
+amazonas,2021-03-15,200
+antioquia,2021-03-15,6662
+arauca,2021-03-15,171
+atlantico,2021-03-15,1833
+barranquilla,2021-03-15,2260
+bolivar,2021-03-15,355
+boyaca,2021-03-15,1123
+caldas,2021-03-15,990
+caqueta,2021-03-15,630
+casanare,2021-03-15,283
+cauca,2021-03-15,754
+cesar,2021-03-15,1202
+choco,2021-03-15,201
+cordoba,2021-03-15,1859
+cundinamarca,2021-03-15,2950
+guainía,2021-03-15,22
+guaviare,2021-03-15,40
+huila,2021-03-15,1757
+la guajira,2021-03-15,639
+magdalena,2021-03-15,690
+meta,2021-03-15,982
+nariño,2021-03-15,1631
+norte de santannder,2021-03-15,2732
+putumayo,2021-03-15,316
+quindío,2021-03-15,987
+risaralda,2021-03-15,1161
+san andrés y providencia,2021-03-15,45
+santander,2021-03-15,3413
+sucre,2021-03-15,796
+tolima,2021-03-15,2123
+valle del cauca,2021-03-15,6322
+vaupés,2021-03-15,13
+vichada,2021-03-15,23
+
+

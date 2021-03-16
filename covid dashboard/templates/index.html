@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body class='data' style='opacity: 1; background-color: rgb(44, 66, 109);'>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style='margin-bottom: 8px; background-color: black;'>
+        <a class="navbar-brand" href="#">Alerta Covid</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <div class ='container-fluid content'>
+        <div class='row'>
+            <div class='col col-3'>
+                <div class = 'container' style='background-color:rgb(56, 93, 161); margin: 5px; border-radius: 15px;'>
+                    <p style='color: lightgray; font-size: 30px; text-align: center; font-weight: bolder; padding-top: 15px; margin-bottom: 0px;'>Estadisticas colombia</p>
+                    <p style='color:lightgray; font-size: 30px; text-align: center; font-weight: bolder; padding-top: 15px; margin-bottom: 0px;'>Total de Casos.</p>
+                    <p style='color:lightgray; font-size: 30px; text-align: center; font-weight: bolder; padding-top: 15px; margin-bottom: 0px;' class = "text-success">{{Casos_confirmados_total}}</p>
+                    <p style='color:lightgray; font-size: 30px; text-align: center; font-weight: bolder; padding-top: 15px; margin-bottom: 0px;' >Total de Fallecidos</p>
+                    <p style='color:lightgray; font-size: 30px; text-align: center; font-weight: bolder; padding-top: 15px; margin-bottom: 0px;' class="text-danger">{{Total_fallecidos}}</p>
+                    <p style='color:lightgray; font-size: 30px; text-align: center; font-weight: bolder; padding-top: 15px; margin-bottom: 0px;'>Total de Activos</p>
+                    <p style='color:lightgray; font-size: 30px; text-align: center; font-weight: bolder; padding-top: 15px; margin-bottom: 0px;' class= "text-warning">{{Total_activos}}</p>
+                    <p style='color:lightgray; font-size: 30px; text-align: center; font-weight: bolder; padding-top: 15px; margin-bottom: 0px;'>Total de Criticos</p>
+                    <p style='color:rgb(219, 92, 92); font-size: 30px; text-align: center; font-weight: bolder; padding-top: 15px; margin-bottom: 0px;'>{{Total_criticos}}</p>
+                    <p style='color:lightgray; font-size: 30px; text-align: center; font-weight: bolder; padding-top: 15px; margin-bottom: 0px;'>Total de Recuperados</p> 
+                    <p style='color:lightgray; font-size: 30px; text-align: center; font-weight: bolder; padding-top: 15px; margin-bottom: 0px;' class = "text-primary">{{Total_recuperados}}</p>
+                </div> 
+            </div>
+            <div class = 'col col-9' style="padding-right: 37px;">
+                <div class = 'row'>
+                    <div class = 'container' style = 'margin: 5px; border-radius: 15px; background-color:rgb(56, 93, 161);'>
+                        <div class='header' style="padding-top: 15px; padding-bottom: 15px;">
+                            <div class = 'container' style = 'color: lightgray;'>
+                                <h2>Casos por Departamento</h2>
+                            </div>
+                        </div>
+                        <div class = 'data_table_header' style = ' overflow-x:hidden; border-radius: 6px;'>
+                            <div class="dataTables_scrollHeadInner table-responsive" style="box-sizing: content-box; width: 1040.5px; padding-right: 0; max-height: 550px;" role='grid'>
+                                <table class="table sticky-top table-borderless" style="z-index: unset;">
+                                    <thead class="thead" style="background-color:rgb(40, 66, 116) ; ">
+                                      <tr>
+                                        <th style = 'color: lightgray;' >Departamento</th>
+                                        <th style="width: 90px; margin:auto; color: lightgray;" rowspan="1" colspan="1">Confirmados</th>
+                                        <th style = 'color: lightgray;'>Por Millon</th>
+                                        <th style = 'color: lightgray;'>Cambios Hoy</th>
+                                        <th style = 'color: lightgray;'>Criticos</th>
+                                        <th style = 'color: lightgray;'>Fallecidos</th>
+                                        <th style = 'color: lightgray;'>Por Millon</th>
+                                        <th style = 'color: lightgray;'>Cambios Hoy</th>
+                                        <th style = 'color: lightgray;'>Activos</th>
+                                        <th style="padding-right: 18px; color: lightgray;" >Recuperados</th>
+                                      </tr>
+                                    </thead>
+                            </div>
+                        </div>
+                            <table class = 'table table-striped table-borderless'>
+                                <tbody>
+                                    <tr>
+                                      <th role="row" class = "text-white" style = "width: 15px;" class = "text-white">Total <br></br></th>
+                                      <td class = "text-success font-weight-bold">{{Casos_confirmados_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{casos_total_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{cambios_hoy_total}}</td>
+                                      <td class = "text-warning font-weight-bold">{{Total_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{Total_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{Total_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{cambios_fallecidos_total}}</td>
+                                      <td class = "text-warning font-weight-bold">{{Total_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{Total_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white" >Amazonas</th>
+                                      <td class = "text-success font-weight-bold">{{amazonas_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{amazonas_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{amazonas_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{amazonas_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{amazonas_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{amazonas_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{amazonas_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{amazonas_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{amazonas_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Antioquia</th>
+                                      <td class = "text-success font-weight-bold">{{antioquia_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{antioquia_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{antioquia_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{antioquia_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{antioquia_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{antioquia_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{antioquia_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{antioquia_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{antioquia_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Arauca</th>
+                                      <td class = "text-success font-weight-bold">{{arauca_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{arauca_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{arauca_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{arauca_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{arauca_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{arauca_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{arauca_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{arauca_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{arauca_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Atlántico</th>
+                                      <td class = "text-success font-weight-bold">{{atlantico_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{atlantico_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{atlantico_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{atlantico_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{atlantico_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{atlantico_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{atlantico_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{atlantico_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{atlantico_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Barranquilla</th>
+                                      <td class = "text-success font-weight-bold">{{barranquilla_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{barranquilla_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{barranquilla_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{barranquilla_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{barranquilla_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{barranquilla_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{barranquilla_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{barranquilla_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{barranquilla_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Bolivar</th>
+                                      <td class = "text-success font-weight-bold">{{bolivar_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{bolivar_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{bolivar_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{bolivar_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{bolivar_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{bolivar_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{bolivar_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{bolivar_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{bolivar_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Boyaca</th>
+                                      <td class = "text-success font-weight-bold">{{boyaca_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{boyaca_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{boyaca_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{boyaca_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{boyaca_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{boyaca_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{boyaca_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{boyaca_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{boyaca_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Caldas</th>
+                                      <td class = "text-success font-weight-bold">{{caldas_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{caldas_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{caldas_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{caldas_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{caldas_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{caldas_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{caldas_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{caldas_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{caldas_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Caqueta</th>
+                                      <td class = "text-success font-weight-bold">{{caqueta_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{caqueta_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{caqueta_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{caqueta_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{caqueta_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{caqueta_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{caqueta_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{caqueta_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{caqueta_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Casanare</th>
+                                      <td class = "text-success font-weight-bold">{{casanare_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{casanare_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{casanare_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{casanare_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{casanare_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{casanare_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{casanare_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{casanare_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{casanare_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Cauca</th>
+                                      <td class = "text-success font-weight-bold">{{cauca_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{cauca_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{cauca_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{cauca_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{cauca_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{cauca_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{cauca_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{cauca_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{cauca_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Cesar</th>
+                                      <td class = "text-success font-weight-bold">{{cesar_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{cesar_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{cesar_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{cesar_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{cesar_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{cesar_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{cesar_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{cesar_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{cesar_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Chocó</th>
+                                      <td class = "text-success font-weight-bold">{{choco_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{choco_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{choco_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{choco_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{choco_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{choco_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{choco_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{choco_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{choco_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Cordoba</th>
+                                      <td class = "text-success font-weight-bold">{{cordoba_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{cordoba_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{cordoba_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{cordoba_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{cordoba_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{cordoba_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{cordoba_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{cordoba_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{cordoba_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Cundinamarca</th>
+                                      <td class = "text-success font-weight-bold">{{cundinamarca_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{cundinamarca_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{cundinamarca_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{cundinamarca_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{cundinamarca_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{cundinamarca_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{cundinamarca_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{cundinamarca_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{cundinamarca_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Guainía</th>
+                                      <td class = "text-success font-weight-bold">{{guainia_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{guainia_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{guainia_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{guainia_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{guainia_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{guainia_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{guainia_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{guainia_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{guainia_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Guaviare</th>
+                                      <td class = "text-success font-weight-bold">{{guaviare_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{guaviare_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{guaviare_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{guaviare_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{guaviare_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{guaviare_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{guaviare_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{guaviare_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{guaviare_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Huila</th>
+                                      <td class = "text-success font-weight-bold">{{huila_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{huila_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{huila_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{huila_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{huila_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{huila_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{huila_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{huila_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{huila_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">La Guajira</th>
+                                      <td class = "text-success font-weight-bold">{{guajira_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{guajira_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{guajira_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{guajira_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{guajira_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{guajira_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{guajira_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{guajira_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{guajira_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Magdalena</th>
+                                      <td class = "text-success font-weight-bold">{{magdalena_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{magdalena_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{magdalena_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{magdalena_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{magdalena_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{magdalena_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{magdalena_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{magdalena_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{magdalena_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Meta</th>
+                                      <td class = "text-success font-weight-bold">{{meta_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{meta_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{meta_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{meta_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{meta_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{meta_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{meta_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{meta_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{meta_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Nariño</th>
+                                      <td class = "text-success font-weight-bold">{{nariño_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{nariño_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{nariño_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{nariño_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{nariño_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{nariño_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{nariño_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{nariño_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{nariño_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">N. de Santander</th>
+                                      <td class = "text-success font-weight-bold">{{nsantander_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{nsantander_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{nsantander_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{nsantander_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{nsantander_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{nsantander_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{nsantander_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{nsantander_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{nsantander_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Putumayo</th>
+                                      <td class = "text-success font-weight-bold">{{putumayo_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{putumayo_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{putumayo_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{putumayo_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{putumayo_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{putumayo_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{putumayo_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{putumayo_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{putumayo_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Quindío</th>
+                                      <td class = "text-success font-weight-bold">{{quindio_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{quindio_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{quindio_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{quindio_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{quindio_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{quindio_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{quindio_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{quindio_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{quindio_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Risaralda</th>
+                                      <td class = "text-success font-weight-bold">{{risaralda_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{risaralda_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{risaralda_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{risaralda_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{risaralda_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{risaralda_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{risaralda_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{risaralda_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{risaralda_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">San Andres</th>
+                                      <td class = "text-success font-weight-bold">{{sanandres_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{sanandres_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{sanandres_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{sanandres_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{sanandres_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{sanandres_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{sanandres_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{sanandres_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{sanandres_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Santander</th>
+                                      <td class = "text-success font-weight-bold">{{santander_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{santander_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{santander_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{santander_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{santander_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{santander_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{santander_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{santander_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{santander_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Sucre</th>
+                                      <td class = "text-success font-weight-bold">{{sucre_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{sucre_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{sucre_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{sucre_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{sucre_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{sucre_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{sucre_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{sucre_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{sucre_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Tolima</th>
+                                      <td class = "text-success font-weight-bold">{{tolima_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{tolima_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{tolima_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{tolima_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{tolima_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{tolima_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{tolima_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{tolima_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{tolima_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Valle del Cauca</th>
+                                      <td class = "text-success font-weight-bold">{{vcauca_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{vcauca_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{vcauca_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{vcauca_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{vcauca_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{vcauca_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{vcauca_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{vcauca_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{vcauca_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Vaupés</th>
+                                      <td class = "text-success font-weight-bold">{{vaupes_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{vaupes_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{vaupes_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{vaupes_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{vaupes_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{vaupes_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{vaupes_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{vaupes_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{vaupes_recuperados}}</td>
+                                    </tr>
+                                    <tr>
+                                      <th role="row" class = "text-white">Vichada</th>
+                                      <td class = "text-success font-weight-bold">{{vichada_casos_total}}</td>
+                                      <td class = "text-success font-weight-bold">{{vichada_casos_millon}}</td>
+                                      <td class = "text-success font-weight-bold">{{vichada_cambios_hoy}}</td>
+                                      <td class = "text-warning font-weight-bold">{{vichada_criticos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{vichada_fallecidos}}</td>
+                                      <td class = "text-danger font-weight-bold">{{vichada_fallecidos_millon}}</td>
+                                      <td class = "text-danger font-weight-bold">{{vichada_cambios_fallecidos}}</td>
+                                      <td class = "text-warning font-weight-bold">{{vichada_activos}}</td>
+                                      <td class = "text-primary font-weight-bold">{{vichada_recuperados}}</td>
+                                    </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
